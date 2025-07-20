@@ -29,7 +29,7 @@ class Command(BaseCommand):
                 host=host,
                 location=fake.city(),
                 listing_type=random.choice(listing_types),
-                price_per_night=random.randint(50, 500),
+                price=random.randint(50, 500),
                 capacity=random.randint(1, 10),
                 available_from=fake.date_this_year(),
                 available_to=fake.date_between(start_date='+30d', end_date='+90d'),
